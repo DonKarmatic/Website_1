@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Cloud Lace Registration</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <form class="form" action="register.php" method="post">
+        <h1 class="login-title">Cloud Lace Registration</h1>
+        <input type="text" class="login-input" name="email" placeholder="Email Adress" required>
+        <input type="password" class="login-input" name="password" placeholder="Password" required>
+        <input type="address" class="login-input" name="address" placeholder="Address" required>
+        <input type="age" class="login-input" name="age" placeholder="Age" required>
+        <label for="payMethod" style="color:white">Choose Payment Method:</label>
+          <select id="payMethod" name="payMethod">
+            <option value="Visa">Visa</option>
+            <option value="Master Card">Master Card</option>
+            <option value="Paypal">Paypal</option>
+          </select>
+        <p></p>
+        <input type="submit" name="submit" value="Register" class="login-button">
+        <p class="link">Already have an account? <a href="login.php">Login here</a></p>
+    </form>
+</body>
+</html>
